@@ -1,0 +1,219 @@
+@media screen and (max-width: 770px) {
+  .navbar .navbar-nav .nav-item:hover {
+    transform: scale(1.07);
+    transition-duration: 0.5s;
+    color: rgb(92, 255, 255);
+  }
+  .navbar-collapse {
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 1);
+  }
+  .carousel-content {
+    margin-top: 30vh;
+  }
+  .carousel .carousel-item {
+    height: 300px;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .navbar .navbar-nav .nav-item:hover {
+    transform: scale(1.4);
+    transition-duration: 0.5s;
+    color: rgb(92, 255, 255);
+  }
+  .carousel .carousel-item {
+    height: 400px;
+  }
+}
+.row-header {
+  margin: 40px 0px auto;
+  padding: 0px 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+  font-family: "New Tegomin", serif;
+}
+
+.row-header .rTitle {
+  color: rgb(255, 255, 255);
+  text-shadow: 5px 5px 8px rgb(0, 0, 0);
+  text-align: center;
+  font-size: 90px;
+  font-family: "New Tegomin", serif;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  color: white;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 0px auto;
+  padding: 20px 0px;
+  color: aqua;
+}
+
+.aboutHeader {
+  margin-top: 50px;
+  background: url("/img/main_about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 90vh;
+  color: rgb(255, 255, 255);
+  font-size: 80px;
+  font-weight: 400;
+  font-family: "New Tegomin", serif;
+}
+
+.aboutTitle {
+  margin-top: 30vh;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.ourHistory {
+  background-image: url("/img/white-concrete-wall_53876-92803.jpg");
+}
+
+.briefHistory p {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+}
+.briefHistory h1 {
+  color: black;
+}
+
+.structureHistory p {
+  font-size: 18px;
+  font-weight: 300;
+  color: black;
+}
+.historyImg {
+  width: 100%;
+  height: 60%;
+  margin-bottom: 50px;
+}
+.historyImg img {
+  width: 100%;
+  height: 75%;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: white;
+}
+
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  background: url("/img/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: large;
+  font-weight: 300;
+}
+.breadcrumb .active {
+  color: white;
+}
+
+.breadcrumb .breadcrumb-item a {
+  color: aquamarine;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  border-color: whitesmoke;
+}
+.navbar {
+  height: 100px;
+}
+
+.navbar-inner {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 20px;
+  font-family: "Architects Daughter", cursive;
+}
+
+.navbar .navbar-nav .active .nav-link {
+  color: aqua;
+}
+
+.navbar .navbar-nav .nav-item:hover {
+  color: rgb(92, 255, 255);
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.carousel-inner {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 1), 5px 0 20px 0 rgba(0, 0, 0, 1);
+}
+
+.carousel-caption {
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 8px rgb(0, 0, 0);
+  font-size: 20px;
+}
+.carousel .carousel-item img {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.modal .modal-header {
+  background: #512da8;
+  color: floralwhite;
+}
+.modal .modal-header button {
+  color: floralwhite;
+}
+
+.modal .modal-body {
+  background: #d1c4e9;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: underline;
+}
+
+.customLink {
+  color: white;
+  text-decoration: underline;
+}
+.gap {
+  min-height: 15vh;
+}

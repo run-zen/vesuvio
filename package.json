@@ -1,0 +1,23 @@
+{
+  "name": "vesuvio",
+  "version": "1.0.0",
+  "description": "This website is for vesuvio restaurant",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper": "^1.0.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

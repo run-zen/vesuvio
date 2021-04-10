@@ -1,0 +1,28 @@
+.contactHeader {
+  background-image: url("/img/42_1_contact-us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90vh;
+  margin-top: 50px;
+}
+.contactTitle {
+  margin-top: 30vh;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 300;
+  color: white;
+  text-shadow: 5px 6px 8px black;
+}
+
+.contactInfo {
+  font-size: 17px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+address a {
+  color: white;
+  text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+.eventsHeader {
+  background-image: url("/img/https___specials-images.forbesimg.com_imageserve_5e4c0c1999d44900073534e8_0x0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  margin-top: 50px;
+}
+.eventsTitle {
+  margin-top: 20vh;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 300;
+  font-family: "New Tegomin", serif;
+  color: white;
+  text-shadow: 5px 6px 8px black;
+}
+
+.eventsMain {
+  background-image: url("/img/white-concrete-wall_53876-92803.jpg");
+
+  min-height: 100vh;
+}
+
+.eventsMain p {
+  font-size: 18px;
+  font-weight: 350;
+  margin-top: 20px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  border-bottom: 1px ridge;
+  min-height: 400px;
+  color: black;
+}
+
+hr {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  height: 2px;
+  border-width: 0;
+  color: rgb(65, 65, 65);
+  background-color: rgb(65, 65, 65);
+}
+
+.eventtext h1 {
+  margin-left: 2vw;
+  margin-top: 3vh;
+}
+
+.eventtext p {
+  margin-left: 2vw;
+}
+.event img {
+  width: 100%;
+  max-height: 50%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5), 5px 0 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.gap {
+  min-height: 15vh;
+}
+
+.customTeam {
+  text-align: center;
+}

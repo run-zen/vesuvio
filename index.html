@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/indexCss.css">
+
+    <!-- styles -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+    </style>
+
+    <title>Vesuvio</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-inner navbar-expand-md fixed-top">
+        <div class="container">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="Navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span class="fa fa-info fa-lg"></span> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./events.html"><span class="fa fa-list fa-lg"></span> Events</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                </ul>
+                <div class="mr-0 ml-1">
+                    <a role="button" class="btn btn-warning btn-block nav-link"
+                        href="#" id="reserveButton">                 
+                        Reserve Table
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="reservationmodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" id="reserveModalClose">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <label for="name" class="col-12 col-sm-2 col-form-label">Name</label>
+                            <div class="col-12 col-sm-10">
+                                <input type="text" name="name" id="name" class="form-control col-12 col-lg-6" placeholder="Full name" required>
+                            </div>
+                            <label for="phoneNo" class="col-12 col-sm-2 col-form-label mt-3">Contact No.</label>
+                            <div class="col-12 col-sm-10 mt-3">
+                                <input type="tel" name="phoneNo" id="phoneNo" class="form-control col-12 col-lg-6" placeholder="0123-456789" pattern="[0-9]{4}-[0-9]{6}" required>
+                            </div>
+                            <label for="no_of_guests" class="col-12 col-sm-2 col-form-label">Number of Guests</label>
+                            <dd id="no_of_guests" class="col-12 col-sm-10 mt-2"><input type="radio" id="1" name="guests" value="1">&nbsp;
+                                                        <label style="font-size: 23px;" for="1"> 1</label>&nbsp;&nbsp;
+                                                        <input type="radio" id="2" name="guests" value="2" checked>&nbsp;
+                                                        <label style="font-size: 23px;" for="2"> 2</label>&nbsp;&nbsp;
+                                                        <input type="radio" id="3" name="guests" value="3">&nbsp;
+                                                        <label style="font-size: 23px;" for="3"> 3</label>&nbsp;&nbsp;
+                                                        <input type="radio" id="4" name="guests" value="4">&nbsp;
+                                                        <label style="font-size: 23px;" for="4"> 4</label>&nbsp;&nbsp;
+                                                        <input type="radio" id="5" name="guests" value="5">&nbsp;
+                                                        <label style="font-size: 23px;" for="5"> 5</label>&nbsp;&nbsp;
+                                                        <input type="radio" id="6" name="guests" value="6">&nbsp;
+                                                        <label style="font-size: 23px;" for="6"> 6</label>&nbsp;&nbsp;
+                            </dd> 
+                        </div>
+                        <div class="form-row">
+                            <div class="col-12 col-sm-2">
+                                <label class="mt-4" for="guesttype">Section</label>
+                            </div>
+                            <div class="col-12 col-sm-10 col-form-label mt-1">
+							    <select class="form-control col-5" id="product">
+                                    <option>Non-Smoking</option>
+                                    <option>Smoking</option>
+							    </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label for="date_time" class="col-12 col-sm-2 col-form-label mt-3">Date and Time</label>
+                            <div class="col-6 col-sm-4 mt-3">
+                                <input type="date" class="form-control" id="date_time" name="date" required>
+                            </div>
+                            <div class="col-6 col-sm-4 mt-3">
+                                <input type="time" class="form-control" id="date_time" name="time" required>
+                            </div>                            
+                        </div>
+                        <div class="form-group row"> 
+                            <div class="offset-sm-2 col-form-label mt-3">
+                                <a type="button" class="btn btn-secondary" id="reserveCancel">Cancel</a>
+                                <input type="submit" class="btn btn-primary ml-1"></input>                          
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="indexHeader">
+        <header>
+            <div class="container">
+                <div class="row row-header">
+                    <div class="col-12">
+                        <div class="rTitle">Vesuvio </div>
+                        <p >When you're here, you're family</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col carsousel-content">
+                    <div class="carousel slide" id="mycarousel" data-ride="carousel">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <img class="d-block img-fluid w-50" alt="cacio"
+                                    src="img/cacio-e-pepe-osteria-900x1260.jpg">
+                                <img class="d-block img-fluid w-50" alt="meatballs"
+                                    src="img/DSC00410-e1485955232162-900x615.jpg" style="margin-left: 50%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>True Roman Cuisine</h2>
+                                    <p class="d-none d-sm-block">The dishes of traditional Roman cuisine that we all know have always been on the 'Vesuvio menu.</p>                  
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid w-50" alt="dolci-dessert"
+                                    src="img/dolci-dessert.jpg">
+                                <img class="d-block img-fluid w-50" alt="cake"
+                                    src="img/gusto-28-torta-cioccolato-1650x986.jpg" style="margin-left: 50%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Dessert</h2>
+                                    <p class="d-none d-sm-block">Desserts prepared by one of the finest pastry chef</p>                  
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid w-50" alt="osteria"
+                                    src="img/osteria-tagliere-salumi-vino-rosso-900x692.jpg">
+                                <img class="d-block img-fluid w-50" alt="amatriciana"
+                                    src="img/amatriciana-gusto-1.jpg" style="margin-left: 50%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Authentic Roman Dishes</h2>
+                                    <p class="d-none d-sm-block">Roman dishes prepared by our executive chef</p>                  
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid w-50" alt="sala-interna"
+                                    src="img/sala-interna-ristorante-gusto.jpg">
+                                <img class="d-block img-fluid w-50" alt="vista-interno"
+                                    src="img/vista-interno-divano-lungo.jpg" style="margin-left: 50%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Luxrious and Modern</h2>
+                                    <p class="d-none d-sm-block">The restaurant is designed by the finest Italian designer</p>                  
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block img-fluid w-50" alt="cantina"
+                                    src="img/cantina-vini-gusto.jpg">
+                                <img class="d-block img-fluid w-50" alt="bar"
+                                    src="img/jeremythomasproject-5c489a9746e0fb0001623cbf.jpg" style="margin-left: 50%;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2>Fine Wine</h2>
+                                    <p class="d-none d-sm-block">Wide range of selection our finest wine, champagne, etc</p>                  
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">
+                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li> 
+                            <li data-target="#mycarousel" data-slide-to="1" ></li> 
+                            <li data-target="#mycarousel" data-slide-to="2" ></li>
+                            <li data-target="#mycarousel" data-slide-to="3" ></li>
+                            <li data-target="#mycarousel" data-slide-to="4" ></li> 
+                        </ol>
+                        <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                        <button class="btn btn-danger" id="carouselButton">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <div class="indexMain">
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-12 gap"></div>
+                <div class="col-12 col-lg-6">
+                    <h1 style="font-size: 50px;">Tradition in the kitchen</h1>
+                    <p style="margin-right: 10px;font-size: 20px;">The gastronomic formula of the new 'Vesuvio restaurant respects and reinforces the choices made in 1998, drawing inspiration from the gastronomic heritage of the Bel Paese, with attention to cooking, the selection of raw materials, the combinations with wines, for the approximately 300 seats between inside and the dehor. A unique and multifaceted restaurant in the historic center of Rome .</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="/img/roman-kitchen-culina.jpg" alt="roman kitchen" style="width: 100%;border-radius: 50%;">
+                </div>
+                <div class="col-12 gap"></div>
+                <div class="col-12 col-lg-6">
+                    <img src="/img/sala-interna-ristorante-gusto.jpg" alt="restaurant" id="mid-img">
+                </div>
+                <div class="col-12 col-lg-6 indexMain-text">
+                    <h1>From morning to late evening</h1>
+                    <p>From early morning with breakfast, through lunch, snack, dinner, after dinner and weekend brunch, the staff welcomes guests with the main aim of creating an informal atmosphere but with attention to detail. Kitchen, pizza oven, street food, grill and rotisserie, emporium of Italian specialties, are the variations ready to conquer even the most demanding palates.</p>
+                </div>
+                <div class="col-12 gap"></div>
+                <div class="col-12 col-lg-6">
+                    <h1 style="font-size: 50px;">Dinners and private parties</h1>
+                    <p style="font-size: 20px;">The flexibility of the 'Gusto space allows the organization of private and corporate dinners, birthdays, and business lunches. The kitchen creates ad hoc menus on the most diverse customer needs.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="/img/private_dinner.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer align-self-center">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2"> 
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="./events.html">Events</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+		                Via Montegrappa, 2 <br>
+                        Bologna, Italy<br>
+		                <i class="fa fa-phone fa-lg"></i> : +852 1234 5678<br>
+		                <i class="fa fa-fax fa-lg"></i> : +852 8765 4321<br>
+		                <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:vesuvio@food.net">vesuvio@food.net</a>
+		            </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="mailto:"><i class="fa fa-envelope fa-lg"></i></a>
+                    </div>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>
